@@ -57,6 +57,7 @@
  
 </li>
 	<h3>Female</h3>
+	<!-- 
 	<li>music</li>
 	<table align="center" class="bottom">
 		<tr>
@@ -172,8 +173,122 @@
 			<td><audio src="./audio/adapter/FAK.dcm/wav_FAK.dcm@Girl@1_noisenoise-free-sound-0826_snr-5/FAK.dcm@Girl@1@@FAK.dcm@Girl@103_generated_e2e.wav" controls></audio></td>
 		</tr>
 	</table>
+	-->
+	<li>music</li>
+	<table align="center" class="bottom">
+		<tr>
+			<th></th>
+			<th>Reference speech</th>
+			<th>Enhanced reference speech</th>
+			<th>Backbone</th>
+			<th>without adapters</th>      
+			<th>With bottleneck and CNN adapters</th> 
+			<th>Original</th> 
+		</tr>
+		<tr>
+			<td>Noise free</td>
+			<td><audio src="./audio/withnoise/noise_free/F40006/music-fma-0106.wav" controls></audio></td>
+			<td><audio src="./audio/withnoise/noise_free/F40006/music-fma-0106_enh.wav" controls></audio></td>
+			<td><audio src="./audio/ref/F40006/wav_F40006@20202Q_Select@4/F40006@20202Q_Select@4@@F40006@20202Q_Select@20_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/noadapter/F40006/wav_F40006@20202Q_Select@4/F40006@20202Q_Select@4@@F40006@20202Q_Select@20_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/adapter/F40006/wav_F40006@20202Q_Select@4/F40006@20202Q_Select@4@@F40006@20202Q_Select@20_generated_e2e.wav" controls></audio></td>
+			<td rowspan = "3"><audio src="./audio/original/F40006/F40006@20202Q_Select@20.wav" controls></audio></td>
+		</tr>
+		<tr>
+			<td>10 dB</td>
+			<td><audio src="./audio/withnoise/10dB/F40006/music-jamendo-0197.wav" controls></audio></td>
+			<td><audio src="./audio/withnoise/10dB/F40006/music-jamendo-0197_enh.wav" controls></audio></td>
+			<td><audio src="./audio/backbone/F40006/wav_F40006@20202Q_Select@4_noisemusic-jamendo-0197_snr10/F40006@20202Q_Select@4@@F40006@20202Q_Select@20_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/noadapter/F40006/wav_F40006@20202Q_Select@4_noisemusic-jamendo-0197_snr10/F40006@20202Q_Select@4@@F40006@20202Q_Select@20_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/adapter/F40006/wav_F40006@20202Q_Select@4_noisemusic-jamendo-0197_snr10/F40006@20202Q_Select@4@@F40006@20202Q_Select@20_generated_e2e.wav" controls></audio></td>
+			
+		</tr>
+		<tr>
+			<td>-5 dB</td>
+			<td><audio src="./audio/withnoise/-5dB/F40006/music-jamendo-0197.wav" controls></audio></td>
+			<td><audio src="./audio/withnoise/-5dB/F40006/music-jamendo-0197_enh.wav" controls></audio></td>
+			<td><audio src="./audio/backbone/F40006/wav_F40006@20202Q_Select@4_noisemusic-jamendo-0197_snr-5/F40006@20202Q_Select@4@@F40006@20202Q_Select@20_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/noadapter/F40006/wav_F40006@20202Q_Select@4_noisemusic-jamendo-0197_snr-5/F40006@20202Q_Select@4@@F40006@20202Q_Select@20_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/adapter/F40006/wav_F40006@20202Q_Select@4_noisemusic-jamendo-0197_snr-5/F40006@20202Q_Select@4@@F40006@20202Q_Select@20_generated_e2e.wav" controls></audio></td>
+			
+		</tr>
+	</table>
 
+	<li>speech</li>
+	<table align="center" class="bottom">
+		<tr>
+			<th></th>
+			<th>Reference speech</th>
+			<th>Enhanced reference speech</th>
+			<th>Backbone</th>
+			<th>without adapters</th>      
+			<th>With bottleneck and CNN adapters</th> 
+			<th>Original</th> 
+		</tr>
+		<tr>
+			<td>Noise free</td>
+			<td><audio src="./audio/withnoise/noise_free/F40006/music-fma-0106.wav" controls></audio></td>
+			<td><audio src="./audio/withnoise/noise_free/F40006/music-fma-0106_enh.wav" controls></audio></td>
+			<td><audio src="./audio/ref/F40006/wav_F40006@20202Q_Select@4/F40006@20202Q_Select@4@@F40006@20202Q_Select@27_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/noadapter/F40006/wav_F40006@20202Q_Select@4/F40006@20202Q_Select@4@@F40006@20202Q_Select@27_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/adapter/F40006/wav_F40006@20202Q_Select@4/F40006@20202Q_Select@4@@F40006@20202Q_Select@27_generated_e2e.wav" controls></audio></td>
+			<td rowspan = "3"><audio src="./audio/original/F40006/F40006@20202Q_Select@27.wav" controls></audio></td>
+		</tr>
+		<tr>
+			<td>10 dB</td>
+			<td><audio src="./audio/withnoise/10dB/F40006/speech-librivox-0172.wav" controls></audio></td>
+			<td><audio src="./audio/withnoise/10dB/F40006/speech-librivox-0172_enh.wav" controls></audio></td>
+			<td><audio src="./audio/backbone/F40006/wav_F40006@20202Q_Select@4_noisespeech-librivox-0172_snr10/F40006@20202Q_Select@4@@F40006@20202Q_Select@27_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/noadapter/F40006/wav_F40006@20202Q_Select@4_noisespeech-librivox-0172_snr10/F40006@20202Q_Select@4@@F40006@20202Q_Select@27_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/adapter/F40006/wav_F40006@20202Q_Select@4_noisespeech-librivox-0172_snr10/F40006@20202Q_Select@4@@F40006@20202Q_Select@27_generated_e2e.wav" controls></audio></td>
+		</tr>
+		<tr>
+			<td>-5 dB</td>
+			<td><audio src="./audio/withnoise/-5dB/F40006/speech-librivox-0172.wav" controls></audio></td>
+			<td><audio src="./audio/withnoise/-5dB/F40006/speech-librivox-0172_enh.wav" controls></audio></td>
+			<td><audio src="./audio/backbone/F40006/wav_F40006@20202Q_Select@4_noisespeech-librivox-0172_snr-5/F40006@20202Q_Select@4@@F40006@20202Q_Select@27_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/noadapter/F40006/wav_F40006@20202Q_Select@4_noisespeech-librivox-0172_snr-5/F40006@20202Q_Select@4@@F40006@20202Q_Select@27_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/adapter/F40006/wav_F40006@20202Q_Select@4_noisespeech-librivox-0172_snr-5/F40006@20202Q_Select@4@@F40006@20202Q_Select@27_generated_e2e.wav" controls></audio></td>
+		</tr>
+	</table>
 
+	<li>general noise</li>
+	<table align="center" class="bottom">
+		<tr>
+			<th></th>
+			<th>Reference speech</th>
+			<th>Enhanced reference speech</th>
+			<th>Backbone</th>
+			<th>without adapters</th>      
+			<th>With bottleneck and CNN adapters</th> 
+			<th>Original</th> 
+		</tr>
+		<tr>
+			<td>Noise free</td>
+			<td><audio src="./audio/withnoise/noise_free/F40006/music-fma-0106.wav" controls></audio></td>
+			<td><audio src="./audio/withnoise/noise_free/F40006/music-fma-0106_enh.wav" controls></audio></td>
+			<td><audio src="./audio/ref/F40006/wav_F40006@20202Q_Select@4/F40006@20202Q_Select@4@@F40006@20202Q_Select@23_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/noadapter/F40006/wav_F40006@20202Q_Select@4/F40006@20202Q_Select@4@@F40006@20202Q_Select@23_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/adapter/F40006/wav_F40006@20202Q_Select@4/F40006@20202Q_Select@4@@F40006@20202Q_Select@23_generated_e2e.wav" controls></audio></td>
+			<td rowspan = "3"><audio src="./audio/original/F40006/F40006@20202Q_Select@23.wav" controls></audio></td>			
+		</tr>
+		<tr>
+			<td>10 dB</td>
+			<td><audio src="./audio/withnoise/10dB/F40006/noise-free-sound-0826.wav" controls></audio></td>
+			<td><audio src="./audio/withnoise/10dB/F40006/noise-free-sound-0826_enh.wav" controls></audio></td>
+			<td><audio src="./audio/backbone/F40006/wav_F40006@20202Q_Select@4_noisenoise-free-sound-0826_snr10/F40006@20202Q_Select@4@@F40006@20202Q_Select@23_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/noadapter/F40006/wav_F40006@20202Q_Select@4_noisenoise-free-sound-0826_snr10/F40006@20202Q_Select@4@@F40006@20202Q_Select@23_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/adapter/F40006/wav_F40006@20202Q_Select@4_noisenoise-free-sound-0826_snr10/F40006@20202Q_Select@4@@F40006@20202Q_Select@23_generated_e2e.wav" controls></audio></td>
+		</tr>
+		<tr>
+			<td>-5 dB</td>
+			<td><audio src="./audio/withnoise/-5dB/F40006/noise-free-sound-0826.wav" controls></audio></td>
+			<td><audio src="./audio/withnoise/-5dB/F40006/noise-free-sound-0826_enh.wav" controls></audio></td>
+			<td><audio src="./audio/backbone/F40006/wav_F40006@20202Q_Select@4_noisenoise-free-sound-0826_snr-5/F40006@20202Q_Select@4@@F40006@20202Q_Select@23_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/noadapter/F40006/wav_F40006@20202Q_Select@4_noisenoise-free-sound-0826_snr-5/F40006@20202Q_Select@4@@F40006@20202Q_Select@23_generated_e2e.wav" controls></audio></td>
+			<td><audio src="./audio/adapter/F40006/wav_F40006@20202Q_Select@4_noisenoise-free-sound-0826_snr-5/F40006@20202Q_Select@4@@F40006@20202Q_Select@23_generated_e2e.wav" controls></audio></td>
+		</tr>
+	</table>
 	<h3>Male</h3>
 	<li>music</li>
 	<table align="center" class="bottom">
