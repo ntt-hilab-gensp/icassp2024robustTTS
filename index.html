@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noise-robust zero-shot text-to-speech synthesis conditioned by self-supervised speech-representation model with adapters</title>
+  <title>Noise-robust zero-shot text-to-speech synthesis conditioned on self-supervised speech-representation model with adapters</title>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -50,7 +50,7 @@
   <h2>Performance comparison on zero-shot TTS </h2>
   <li>All speech samples are generated from the method with speech enhancement</li>
   <li>Enhanced reference speech: the reference speech processed with speech enhancement. This SSL model processes this enhanced speech.</li>
-  <li>Backbone: backbone pretrained TTS model based on the SSL model</li>
+  <li>Without fine-tuning: Without fine-tuning pretrained TTS model based on the SSL model</li>
   <li>without adapter: fine-tuned without using adapters</li>
   <li>With bottleneck and CNN adapters: fine-tuned with adapters</li>
   <li>"Original" in table is the target speaker's speech with the same speech contents for the generated speech. Note that this is not the reference speech.
@@ -70,7 +70,7 @@
 			<th>Original</th> 
 		</tr>
 		<tr>
-			<td>Noise free</td>
+			<td>clean</td>
 			<td><audio src="./audio/withnoise/noise_free/FAK/music-jamendo-0203.wav" controls></audio></td>
 			<td><audio src="./audio/withnoise/noise_free/FAK/music-jamendo-0203_enh.wav" controls></audio></td>
 			<td><audio src="./audio/ref/FAK.dcm/wav_FAK.dcm@Girl@1/FAK.dcm@Girl@1@@FAK.dcm@Girl@102_generated_e2e.wav" controls></audio></td>
@@ -110,7 +110,7 @@
 			<th>Original</th> 
 		</tr>
 		<tr>
-			<td>Noise free</td>
+			<td>clean</td>
 			<td><audio src="./audio/withnoise/noise_free/FAK/music-jamendo-0203.wav" controls></audio></td>
 			<td><audio src="./audio/withnoise/noise_free/FAK/music-jamendo-0203_enh.wav" controls></audio></td>
 			<td><audio src="./audio/ref/FAK.dcm/wav_FAK.dcm@Girl@1/FAK.dcm@Girl@1@@FAK.dcm@Girl@110_generated_e2e.wav" controls></audio></td>
@@ -148,7 +148,7 @@
 			<th>Original</th> 
 		</tr>
 		<tr>
-			<td>Noise free</td>
+			<td>clean</td>
 			<td><audio src="./audio/withnoise/noise_free/FAK/music-jamendo-0203.wav" controls></audio></td>
 			<td><audio src="./audio/withnoise/noise_free/FAK/music-jamendo-0203_enh.wav" controls></audio></td>
 			<td><audio src="./audio/ref/FAK.dcm/wav_FAK.dcm@Girl@1/FAK.dcm@Girl@1@@FAK.dcm@Girl@103_generated_e2e.wav" controls></audio></td>
@@ -174,19 +174,19 @@
 		</tr>
 	</table>
 	-->
-	<li>music</li>
+	<li>music (music-jamendo-0197)</li>
 	<table align="center" class="bottom">
 		<tr>
 			<th></th>
 			<th>Reference speech</th>
 			<th>Enhanced reference speech</th>
-			<th>Backbone</th>
+			<th>Without fine-tuning</th>
 			<th>without adapters</th>      
 			<th>With bottleneck and CNN adapters</th> 
 			<th>Original</th> 
 		</tr>
 		<tr>
-			<td>Noise free</td>
+			<td>clean</td>
 			<td><audio src="./audio/withnoise/noise_free/F40006/music-fma-0106.wav" controls></audio></td>
 			<td><audio src="./audio/withnoise/noise_free/F40006/music-fma-0106_enh.wav" controls></audio></td>
 			<td><audio src="./audio/ref/F40006/wav_F40006@20202Q_Select@4/F40006@20202Q_Select@4@@F40006@20202Q_Select@20_generated_e2e.wav" controls></audio></td>
@@ -214,19 +214,19 @@
 		</tr>
 	</table>
 
-	<li>speech</li>
+	<li>speech (speech-librivox-0172)</li>
 	<table align="center" class="bottom">
 		<tr>
 			<th></th>
 			<th>Reference speech</th>
 			<th>Enhanced reference speech</th>
-			<th>Backbone</th>
+			<th>Without fine-tuning</th>
 			<th>without adapters</th>      
 			<th>With bottleneck and CNN adapters</th> 
 			<th>Original</th> 
 		</tr>
 		<tr>
-			<td>Noise free</td>
+			<td>clean</td>
 			<td><audio src="./audio/withnoise/noise_free/F40006/music-fma-0106.wav" controls></audio></td>
 			<td><audio src="./audio/withnoise/noise_free/F40006/music-fma-0106_enh.wav" controls></audio></td>
 			<td><audio src="./audio/ref/F40006/wav_F40006@20202Q_Select@4/F40006@20202Q_Select@4@@F40006@20202Q_Select@27_generated_e2e.wav" controls></audio></td>
@@ -252,19 +252,19 @@
 		</tr>
 	</table>
 
-	<li>general noise</li>
+	<li>general noise (noise-free-sound-0826)</li>
 	<table align="center" class="bottom">
 		<tr>
 			<th></th>
 			<th>Reference speech</th>
 			<th>Enhanced reference speech</th>
-			<th>Backbone</th>
+			<th>Without fine-tuning</th>
 			<th>without adapters</th>      
 			<th>With bottleneck and CNN adapters</th> 
 			<th>Original</th> 
 		</tr>
 		<tr>
-			<td>Noise free</td>
+			<td>clean</td>
 			<td><audio src="./audio/withnoise/noise_free/F40006/music-fma-0106.wav" controls></audio></td>
 			<td><audio src="./audio/withnoise/noise_free/F40006/music-fma-0106_enh.wav" controls></audio></td>
 			<td><audio src="./audio/ref/F40006/wav_F40006@20202Q_Select@4/F40006@20202Q_Select@4@@F40006@20202Q_Select@23_generated_e2e.wav" controls></audio></td>
@@ -290,19 +290,19 @@
 		</tr>
 	</table>
 	<h3>Male</h3>
-	<li>music</li>
+	<li>music (music-jamendo-0205)</li>
 	<table align="center" class="bottom">
 		<tr>
 			<th></th>
 			<th>Reference speech</th>
 			<th>Enhanced reference speech</th>
-			<th>Backbone</th>
+			<th>Without fine-tuning</th>
 			<th>without adapters</th>      
 			<th>With bottleneck and CNN adapters</th> 
 			<th>Original</th> 
 		</tr>
 		<tr>
-			<td>Noise free</td>
+			<td>clean</td>
 			<td><audio src="./audio/withnoise/noise_free/M50006/music-fma-0106.wav" controls></audio></td>
 			<td><audio src="./audio/withnoise/noise_free/M50006/music-fma-0106_enh.wav" controls></audio></td>
 			<td><audio src="./audio/ref/M50006/wav_M50006@20202Q_Select@4/M50006@20202Q_Select@4@@M50006@20202Q_Select@25_generated_e2e.wav" controls></audio></td>
@@ -329,19 +329,19 @@
 		</tr>
 	</table>
 
-	<li>speech</li>
+	<li>speech (speech-us-gov-0238)</li>
 	<table align="center" class="bottom">
 		<tr>
 			<th></th>
 			<th>Reference speech</th>
 			<th>Enhanced reference speech</th>
-			<th>Backbone</th>
+			<th>Without fine-tuning</th>
 			<th>without adapters</th>      
 			<th>With bottleneck and CNN adapters</th> 
 			<th>Original</th> 
 		</tr>
 		<tr>
-			<td>Noise free</td>
+			<td>clean</td>
 			<td><audio src="./audio/withnoise/noise_free/M50006/music-fma-0106.wav" controls></audio></td>
 			<td><audio src="./audio/withnoise/noise_free/M50006/music-fma-0106_enh.wav" controls></audio></td>
 			<td><audio src="./audio/ref/M50006/wav_M50006@20202Q_Select@4/M50006@20202Q_Select@4@@M50006@20202Q_Select@27_generated_e2e.wav" controls></audio></td>
@@ -367,19 +367,19 @@
 		</tr>
 	</table>
 
-	<li>general noise</li>
+	<li>general noise (noise-free-sound-0768)</li>
 	<table align="center" class="bottom">
 		<tr>
 			<th></th>
 			<th>Reference speech</th>
 			<th>Enhanced reference speech</th>
-			<th>Backbone</th>
+			<th>Without fine-tuning</th>
 			<th>without adapters</th>      
 			<th>With bottleneck and CNN adapters</th> 
 			<th>Original</th> 
 		</tr>
 		<tr>
-			<td>Noise free</td>
+			<td>clean</td>
 			<td><audio src="./audio/withnoise/noise_free/M50006/music-fma-0106.wav" controls></audio></td>
 			<td><audio src="./audio/withnoise/noise_free/M50006/music-fma-0106_enh.wav" controls></audio></td>
 			<td><audio src="./audio/ref/M50006/wav_M50006@20202Q_Select@4/M50006@20202Q_Select@4@@M50006@20202Q_Select@20_generated_e2e.wav" controls></audio></td>
